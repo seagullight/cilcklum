@@ -8,48 +8,37 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 990px) {
+nav#navigat {left: -250px; 
+			-webkit-transition: left 1s linear 0.5s;
+     -moz-transition: left 1s linear 0.5s;
+     -o-transition: left 1s linear 0.5s;
+     transition: left 1s linear 0.5s;}
 
+section#slider {width: 100%; left: 0; height: 50vh;}
+section#partners {width: 100%; left: 0; height: 50vh;}
+section#partners .container {padding: 0;}
+section#partners img { text-align:center; }
+#sandwich {display: block;}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
-	section#navigat {
 	
-	height: 60vh}
-section#navigat2 .col-md-2 {
-		height: 25vh
-	} 
+	
+	
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	section#navigat {
 	
-	height: 55vh}
-section#navigat2 .col-md-2 {
-		height: 25vh
-	} 
 						
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px) {
-	section#navigat {
 	
-	height: 35vh}
-section#navigat2 .col-md-2 {
-		height: 16vh
-	}
-section#cont .col-md-4
-	{ padding: 0; }
-section#cont table
-{
-
-	position: relative;
-	width: 100%;
-	left: 0;
-}
 }
 
 
@@ -57,23 +46,8 @@ section#cont table
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-section#navigat {
-	
-	height: 35vh}
-section#navigat2 .col-md-2 {
-		height: 15vh
-	}
-section#navigat2 ul.nav_1 {background-color: white;}
 
-section#cont .col-md-4
-	{ padding: 0; }
-section#cont table
-{
 
-	position: relative;
-	width: 100%;
-	left: 0;
-}
 }
 
 

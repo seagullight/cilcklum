@@ -7,13 +7,16 @@ body
 	background-color: $main_bg_color
 div.container-fluid
 	padding: 0
-nav
+nav#navigat
 	display: block
 	position: fixed
+	left: 0
 	border-right: 1px solid #ccc
 	width: 250px
 	height: 100vh
 	padding: 0
+	z-index: 100
+	background-color: white
 	div.logo
 		margin: 20% 5% 0 0
 	input
@@ -25,18 +28,18 @@ nav
 		width: 100%	
 		padding-left: 5%
 	
-div.menu
-	position: relative
-	display: block
-	padding: 10% 5% 0 5%	
-	ul
-		width: 100%
-		padding: 0
-		li
-			list-style-type: none
-			margin-bottom: 5%
-		li:last-child
-			color: orange	
+	div.menu
+		position: relative
+		display: block
+		padding: 10% 5% 0 5%	
+		ul
+			width: 100%
+			padding: 0
+			li
+				list-style-type: none
+				margin-bottom: 5%
+			li:last-child
+				color: orange	
 
 	.glyphicon
 		float: right
@@ -48,6 +51,15 @@ section#slider
 	width: 84%
 	height: 60vh
 	padding: 0		
+	div.togg
+		display: block
+		width: auto
+		height: auto
+		position: fixed
+		background-color: transparent
+		z-index: 99
+		left: 90%
+		top: 5%
 	.container
 		width: 100%
 	.col-md-8
@@ -66,3 +78,73 @@ section#partners
 	img
 		height: 40px
 		width: auto
+		opacity: 0.8
+	img:hover
+		opacity: 1	
+
+
+///////animated sandwich icon/////////////////////
+
+$w: 40px
+$h: 3px
+
+#sandwich
+	width: $w
+	height: $w
+	position: absolute
+	top: 0
+	bottom: 70px
+	left: 0
+	right: 0
+	margin: auto
+	display: none
+
+
+
+
+.sw-topper
+	position: relative
+	top: 15px
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+
+
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: 20px
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: 25px
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+#sandwich.active 
+	.sw-topper
+		top: 15px
+		transform: rotate(140deg)
+	.sw-bottom
+		top: 5px
+		transform: rotate(-140deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+

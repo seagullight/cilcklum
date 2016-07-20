@@ -7,16 +7,19 @@ body {
 div.container-fluid {
   padding: 0; }
 
-nav {
+nav#navigat {
   display: block;
   position: fixed;
+  left: 0;
   border-right: 1px solid #ccc;
   width: 250px;
   height: 100vh;
-  padding: 0; }
-  nav div.logo {
+  padding: 0;
+  z-index: 100;
+  background-color: white; }
+  nav#navigat div.logo {
     margin: 20% 5% 0 0; }
-  nav input {
+  nav#navigat input {
     margin: 50% 0 0 0;
     border-left: none;
     border-right: none;
@@ -24,20 +27,19 @@ nav {
     height: 40px;
     width: 100%;
     padding-left: 5%; }
-
-div.menu {
-  position: relative;
-  display: block;
-  padding: 10% 5% 0 5%; }
-  div.menu ul {
-    width: 100%;
-    padding: 0; }
-    div.menu ul li {
-      list-style-type: none;
-      margin-bottom: 5%; }
-    div.menu ul li:last-child {
-      color: orange; }
-  div.menu .glyphicon {
+  nav#navigat div.menu {
+    position: relative;
+    display: block;
+    padding: 10% 5% 0 5%; }
+    nav#navigat div.menu ul {
+      width: 100%;
+      padding: 0; }
+      nav#navigat div.menu ul li {
+        list-style-type: none;
+        margin-bottom: 5%; }
+      nav#navigat div.menu ul li:last-child {
+        color: orange; }
+  nav#navigat .glyphicon {
     float: right;
     font-size: 15px; }
 
@@ -48,6 +50,15 @@ section#slider {
   width: 84%;
   height: 60vh;
   padding: 0; }
+  section#slider div.togg {
+    display: block;
+    width: auto;
+    height: auto;
+    position: fixed;
+    background-color: transparent;
+    z-index: 99;
+    left: 90%;
+    top: 5%; }
   section#slider .container {
     width: 100%; }
   section#slider .col-md-8 {
@@ -66,6 +77,63 @@ section#partners {
   padding: 1% 0 1% 0; }
   section#partners img {
     height: 40px;
-    width: auto; }
+    width: auto;
+    opacity: 0.8; }
+  section#partners img:hover {
+    opacity: 1; }
+
+#sandwich {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none; }
+
+.sw-topper {
+  position: relative;
+  top: 15px;
+  width: 40px;
+  height: 3px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s; }
+
+.sw-bottom {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  top: 20px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s; }
+
+.sw-footer {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  top: 25px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s; }
+
+#sandwich.active .sw-topper {
+  top: 15px;
+  transform: rotate(140deg); }
+#sandwich.active .sw-bottom {
+  top: 5px;
+  transform: rotate(-140deg); }
+#sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */
