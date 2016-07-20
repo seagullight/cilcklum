@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background-color: #fff; }
+
+div.container-fluid {
+  padding: 0; }
+
+nav {
+  display: block;
+  position: fixed;
+  border-right: 1px solid #ccc;
+  width: 250px;
+  height: 100vh;
+  padding: 0; }
+  nav div.logo {
+    margin: 20% 5% 0 0; }
+  nav input {
+    margin: 50% 0 0 0;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    height: 40px;
+    width: 100%;
+    padding-left: 5%; }
+
+div.menu {
+  position: relative;
+  display: block;
+  padding: 10% 5% 0 5%; }
+  div.menu ul {
+    width: 100%;
+    padding: 0; }
+    div.menu ul li {
+      list-style-type: none;
+      margin-bottom: 5%; }
+    div.menu ul li:last-child {
+      color: orange; }
+  div.menu .glyphicon {
+    float: right;
+    font-size: 15px; }
+
+section#slider {
+  position: relative;
+  left: 250px;
+  display: block;
+  width: 84%;
+  height: 60vh;
+  padding: 0; }
+  section#slider .container {
+    width: 100%; }
+  section#slider .col-md-8 {
+    width: 100%;
+    padding: 0; }
+  section#slider .carousel-indicators {
+    text-align: right; }
+
+section#partners {
+  position: relative;
+  left: 250px;
+  display: block;
+  width: 84%;
+  height: 12vh;
+  background-color: #f9f9fa;
+  padding: 1% 0 1% 0; }
+  section#partners img {
+    height: 40px;
+    width: auto; }
+
+/*# sourceMappingURL=style.css.map */
