@@ -1,12 +1,26 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1280px) {
-
+@media only screen and (max-width : 1024px) {
+section#partners {height: 10vh;}
+section#partners img {margin-top: 20%;}
+section#slider{height: 40vh;}
+section#engage {padding: 0 5% 0 30%;}
+section#managet {padding: 0 5% 0 30%; width: 90%; height: 90vh;}
+section#managet div.suli {left: 0; width: 600px;}
 
 
 }
+@media only screen and (max-width : 1280px) {
+section#partners {height: 10vh;}
+section#partners img {margin-top: 20%;}
+section#slider{height: 40vh;}
+section#engage {padding: 0 5% 0 30%;}
+section#managet {padding: 0 5% 0 30%; width: 90%; height: 90vh;}
+section#managet div.suli {left: 0; width: 700px;}
 
+
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 990px) {
 nav#navigat {left: -250px; 
@@ -25,20 +39,62 @@ section#partners img { text-align:center; }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
 	
-	
+	nav#navigat div.logo {margin:1% 5% 5% 1%;}
+nav#navigat input {margin: 0;}
+section#slider {height:50vh;}
+section#slider div.togg {left: 80%;}
+section#slide .container {height: 40vh;}
+section#partners {height: 130vh;}
+section#partners .col-sm-2{padding: 3% 0;}
+section#partners .col-sm-2 img {margin: 0 auto;}
+section#engage {padding: 0 5%;}
+section#engage h2 {font-size: 1.5em; text-align: left; margin-bottom: 10%;}
+section#managet {padding: 0 0;}
+section#managet ul {margin-left: 5%;}
+section#managet li.inft {display: inline-block; width: 110px; height: 80px;}
+section#managet div.suli {left:7%; width: 85%; height: 100vh;}
+section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}	
 	
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+nav#navigat div.logo {margin:1% 5% 5% 1%;}
+nav#navigat input {margin: 0;}
+section#slider {height:50vh;}
+section#slider div.togg {left: 80%;}
+section#slide .container {height: 40vh;}
+section#partners {height: 130vh;}
+section#partners .col-sm-2{padding: 3% 0;}
+section#partners .col-sm-2 img {margin: 0 auto;}
+section#engage {padding: 0 5%;}
+section#engage h2 {font-size: 1.5em; text-align: left; margin-bottom: 10%;}
+section#managet {padding: 0 0;}
+section#managet ul {margin-left: 5%;}
+section#managet li.inft {display: inline-block; width: 80px; height: 70px;}
+section#managet div.suli {left:5%; width: 85%; height: 10vh;}
+section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}	
 						
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px) {
-	
+	nav#navigat div.logo {margin:1% 5% 5% 1%;}
+nav#navigat input {margin: 0;}
+section#slider {height: 20vh;}
+section#slider div.togg {left: 80%;}
+section#slide .container {height: 40vh;}
+section#partners {height: 60vh;}
+section#partners .col-sm-2{padding: 3% 0;}
+section#partners .col-sm-2 img {margin: 0 auto;}
+section#engage {padding: 0 5%;}
+section#engage h2 {font-size: 1.5em; text-align: left; margin-bottom: 10%;}
+section#managet {padding: 0 0;}
+section#managet ul {margin-left: 10%;}
+section#managet li.inft {display: inline-block; width: 17%; height: 50px;}
+section#managet div.suli {left:10%; width: 80%; height: 80vh;}
+section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}
 }
 
 
@@ -46,19 +102,38 @@ section#partners img { text-align:center; }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+nav#navigat div.logo {margin:1% 5% 5% 1%;}
+nav#navigat input {margin: 0;}
+section#slider {height: 20vh;}
+section#slider div.togg {left: 80%;}
+section#slide .container {height: 40vh;}
+section#partners {height: 80vh;}
+section#partners .col-sm-2{padding: 3% 0;}
+section#partners .col-sm-2 img {margin: 0 auto;}
+section#engage {padding: 0 5%;}
+section#engage h2 {font-size: 1.5em; text-align: left; margin-bottom: 10%;}
+section#managet {padding: 0 0;}
+section#managet ul {margin-left: 10%;}
+section#managet li.inft {display: inline-block; width: 17%; height: 50px;}
+section#managet div.suli {left:10%; width: 80%; height: 100vh;}
+section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}
 
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-/**/
+
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
+@media only screen and (max-width : 768px) {
+section#partners {height: 10vh;}
+section#partners img {margin-top: 20%;}
+section#slider{height: 25vh;}
+section#engage {padding: 0 5% 0 5%;}
+section#managet {padding: 0 5% 0 5%; width: 90%; height: 90vh;}
+section#managet div.suli {left: 0; width: 600px;}
 }
 
 /* Medium Devices, Desktops */
