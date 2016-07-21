@@ -1,6 +1,15 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+section#partners {height: 10vh;}
+section#partners img {margin-top: 20%;}
+section#slider{height: 40vh;}
+section#engage {padding: 0 5% 0 30%;}
+section#managet {padding: 0 5% 0 30%; width: 90%; height: 90vh;}
+section#managet div.suli {left: 0; width: 700px;}
+
+
 @media only screen and (max-width : 1024px) {
 section#partners {height: 10vh;}
 section#partners img {margin-top: 20%;}
@@ -11,13 +20,7 @@ section#managet div.suli {left: 0; width: 600px;}
 
 
 }
-@media only screen and (max-width : 1280px) {
-section#partners {height: 10vh;}
-section#partners img {margin-top: 20%;}
-section#slider{height: 40vh;}
-section#engage {padding: 0 5% 0 30%;}
-section#managet {padding: 0 5% 0 30%; width: 90%; height: 90vh;}
-section#managet div.suli {left: 0; width: 700px;}
+
 
 
 }
@@ -37,6 +40,17 @@ section#partners img { text-align:center; }
 }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+section#partners {height: 10vh;}
+section#partners img {margin-top: 20%;}
+section#slider{height: 25vh;}
+section#engage {padding: 0 5% 0 5%;}
+section#managet {padding: 0 5% 0 5%; width: 90%; height: 90vh;}
+section#managet div.suli {left: 0; width: 600px;}
+}
+
+
+
 @media only screen and (max-width : 640px) {
 	
 	nav#navigat div.logo {margin:1% 5% 5% 1%;}
@@ -71,11 +85,20 @@ section#partners .col-sm-2 img {margin: 0 auto;}
 section#engage {padding: 0 5%;}
 section#engage h2 {font-size: 1.5em; text-align: left; margin-bottom: 10%;}
 section#managet {padding: 0 0;}
-section#managet ul {margin-left: 5%;}
-section#managet li.inft {display: inline-block; width: 80px; height: 70px;}
-section#managet div.suli {left:5%; width: 85%; height: 10vh;}
+section#managet ul {margin-left: 9%;}
+section#managet li.inft {display: inline-block; width: 75px; height: 70px;}
+section#managet div.suli {left:10%; width: 85%; height: 130vh;}
 section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}	
-						
+
+section#succses {left:0; width: 100%; margin-top: 50%;}
+section#succses .pick {height: 50vh;}
+section#succses .pick div.supick {height: 50vh;}
+section#succses .pick div.supick a span {top: 138px; left: 72px;}
+section#succses .pick2 div.supick a span {top:190px; left: 72px;}
+section#succses h2 {font-size: 2.5em;}
+section#someclient {padding: 0 5% 0 10%;}
+section#someclient h2 {font-size: 2.5em; text-align: left;}
+section#someclient img {margin: 5% 5% 5% 25%; text-align: center;}						
 }
 
 /* Custom, iPhone Retina */
@@ -95,6 +118,16 @@ section#managet ul {margin-left: 10%;}
 section#managet li.inft {display: inline-block; width: 17%; height: 50px;}
 section#managet div.suli {left:10%; width: 80%; height: 80vh;}
 section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}
+
+section#succses {left:0; width: 100%; margin-top: 15%;}
+section#succses .pick {height: 40vh;}
+section#succses .pick div.supick {height: 40vh;}
+section#succses .pick div.supick a span {top: 138px; left: 72px;}
+section#succses .pick2 div.supick a span {top:190px; left: 72px;}
+section#succses h2 {font-size: 2em;}
+section#someclient {padding: 0 5% 0 5%;}
+section#someclient h2 {font-size: 2em; text-align: left;}
+section#someclient img {margin: 5% 5% 5% 25%; text-align: center;}
 }
 
 
@@ -117,7 +150,13 @@ section#managet ul {margin-left: 10%;}
 section#managet li.inft {display: inline-block; width: 17%; height: 50px;}
 section#managet div.suli {left:10%; width: 80%; height: 100vh;}
 section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}
-
+section#succses {left:0; width: 100%; margin-top: 35%;}
+section#succses .pick {height: 40vh;}
+section#succses .pick div.supick {height: 40vh;}
+section#succses h2 {font-size: 2em;}
+section#someclient {padding: 0 5% 0 5%;}
+section#someclient h2 {font-size: 2em; text-align: left;}
+section#someclient img {margin: 5% 5% 5% 25%; text-align: center;}
 }
 
 
@@ -127,14 +166,7 @@ section#managet div.suli h2 {padding: 0 0 0 5%; font-size: 1.5em;}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-section#partners {height: 10vh;}
-section#partners img {margin-top: 20%;}
-section#slider{height: 25vh;}
-section#engage {padding: 0 5% 0 5%;}
-section#managet {padding: 0 5% 0 5%; width: 90%; height: 90vh;}
-section#managet div.suli {left: 0; width: 600px;}
-}
+
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
