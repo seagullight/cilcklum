@@ -31,19 +31,41 @@ nav#navigat
 	div.menu
 		position: relative
 		display: block
-		padding: 10% 5% 0 5%	
+		padding: 10% 0 0 0	
 		ul
 			width: 100%
 			padding: 0
 			li
 				list-style-type: none
-				margin-bottom: 5%
+				padding: 2% 5% 2% 5%
+				height: 5vh
+			li:hover
+				background-color: #ccc	
 			li:last-child
-				color: orange	
+				color: #f58020	
 
 	.glyphicon
 		float: right
 		font-size: 15px
+section#subnav
+	position: fixed
+	display: none
+	background-color: black
+	left: 250px
+	width: 250px
+	height: 100vh
+	color: white
+	z-index: 120
+	p
+		width: 100%
+		height: 10vh
+		//background-color: #ccc
+		cursor: pointer
+		font-weight: 800
+		padding: 5% 10% 1% 0
+		color: white
+		text-align: right
+
 section#slider
 	position: relative
 	left: 250px
@@ -166,8 +188,9 @@ section#managet
 section#succses
 	position: relative
 	display: block
-	width: 1300px
-	left: 250px 
+	width: 100%
+	padding-left: 15%
+	
 	h2
 		font-size: 3em
 		font-weight: 100
@@ -217,8 +240,8 @@ section#succses
 				span
 					display: block
 					position: absolute
-					left: 65px
-					top: 125px
+					left: 68px
+					top: 130px
 					width: 0
 					height: 36px
 					padding: 2% 0
@@ -260,8 +283,8 @@ section#succses
 				span
 					display: block
 					position: absolute
-					left: 65px
-					top: 175px
+					left: 68px
+					top: 180px
 					width: 0
 					height: 36px
 					padding: 2% 0
@@ -293,7 +316,98 @@ section#someclient
 		width: 8em
 		text-align: center
 		margin: 20% 1% 20% 1%		
+section#contact
+	position: relative
+	display: block
+	width: 100%
+	padding-right: 1%
+	padding-left: 15%
+	background-color: #4e4e4e
+	.mark
+		height: 10vh
+		background-color: #2a2a2a
+	.col-md-3
+		height: 10vh
+		text-align: center
+		padding: 1% 2% 2% 2%
+		img
+			width: 7em
+			margin: 0 auto
+	.form
+		padding-left: 25%
+		padding-right: 15%	
+		background-color: #4e4e4e
+		h2
+			font-size: 3em
+			color: white
+			font-weight: 700
+			margin-bottom: 5%
+			text-align: center
+			padding-right: 8%
+			span
+				font-weight: 100
+		.col-md-6
+			padding: 0
+			margin-bottom: 5%
+			input
+				background-color: #4e4e4e
+				color: white
+				border: 1px solid white
+			input
+				width: 25em
+				height: 6vh
+				padding-left: 10%
+		.col-md-12
+			padding: 0
+			margin-bottom: 5%
+			p
+			input
+				background-color: #4e4e4e
+				color: white
+				border: 1px solid #f58020
+				width: 12em
+				height: 5vh
+				margin-left: 44em
+				font-weight: 500
+				transition: background-color 0.5s ease-out 0.5s 
+			input:hover
+				background-color: #f58020
+			textarea
+				background-color: #4e4e4e
+				color: white
+				border: 1px solid white	
+				padding: 2% 0 0 5%
+				margin-bottom: 3%
+			
+			
+	.sots
+		height: 15vh
+		background-color: #2a2a2a
+		.col-md-6
+			text-align: center
+			height: 15vh
+			padding: 2% 0 0 2%
+			img
+				width: 15em
+footer
+	position: relative
+	display: block
+	width: 100%
+	padding-right: 1%
+	padding-left: 15%
+	background-color: #4e4e4e
+	.foot
+		height: 10vh
+		.col-md-6
+			height: 10vh
+			text-align: center
+			padding: 2% 0 0 2%
 		
+		a
+			color: white
+			text-decoration: none
+		a:hover
+			color: #f58020										
 ///////animated sandwich icon/////////////////////
 
 $w: 40px

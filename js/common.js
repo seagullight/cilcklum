@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+
+
+
 	$("#sandwich, .menu_item").click(function() {
 
 	 $("#sandwich").toggleClass("active");
@@ -37,5 +41,24 @@ $(".supick a").hover(function(){
 $(this).find("span").animate({width: "60%"}, 300).text($(this).text()); }, function(){
 	$(this).find("span").animate({width: "0"}, 300).text("");
 
-});		
+});
+
+	if($(window).width()>990){
+		$("div.menu li").hover(function(){
+			$("section#subnav").show();}, function(){
+				$("section#subnav").hide();
+		});
+	}else if($(window).width()<990){
+			$("div.menu li").click(function(){
+				$("section#subnav").show();
+				$("section#subnav p").css({"background-color":"#ccc"}).text("Back")
+
+			});
+				$("section#subnav p").click(function(){
+						$("section#subnav").hide("slow");
+				});
+
+	};
+
+	
 		   });
